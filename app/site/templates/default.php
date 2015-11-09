@@ -1,12 +1,12 @@
-<?php snippet('header') ?>
+<?php snippet('head') ?>
 
-  <main class="main" role="main">
+  <div id="content" class="work">
+  	<?php snippet('header') ?>
 
-    <div class="text">
       <h1><?php echo $page->title()->html() ?></h1>
       <?php echo $page->text()->kirbytext() ?>
-    </div>
+  </div> <!-- / #content  -->
 
-  </main>
+<?php snippet('modal') ?>
 
 <?php snippet('footer') ?>

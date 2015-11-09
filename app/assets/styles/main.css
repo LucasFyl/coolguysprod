@@ -802,8 +802,14 @@ small {
   display: block;
   height: 5rem;
   width: 5rem;
-  background: url("../images/asset-icon-menu.svg") no-repeat top left;
-  background-size: 2rem; }
+  position: relative;
+  z-index: 99999; }
+  .menu .menu-trigger.trigger {
+    background: url("../images/asset-icon-menu.svg") no-repeat top left;
+    background-size: 2rem; }
+  .menu .menu-trigger.close {
+    background: url("../images/icon-cursor-white.png") no-repeat top left;
+    background-size: 2rem; }
 .menu #navigation {
   width: calc(100vw - 10rem);
   height: calc(100vh - 10rem);
@@ -811,7 +817,7 @@ small {
   top: 5rem;
   left: 5rem;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 99999;
+  z-index: 99998;
   overflow: hidden; }
   .menu #navigation ul {
     padding-left: 0;

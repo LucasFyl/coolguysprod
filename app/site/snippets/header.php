@@ -1,5 +1,5 @@
         <div class="top left menu">
-            <a href="#" class="menu-trigger"></a>
+            <a href="#" class="menu-trigger trigger"></a>
 
             <div id="navigation">
                 <ul>

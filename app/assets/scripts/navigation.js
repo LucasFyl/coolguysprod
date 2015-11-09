@@ -16,19 +16,23 @@
 			navTl.play();
 		},
 		close: function(){
-			
+			TweenMax.to('#navigation li', 0.35, {y:20,opacity:0,ease:Power3.easeIn});
+			TweenMax.set('#navigation', {display:'none',delay:0.35});
 		},
 		bindEvents: function(){
 			$('body').on('click', '.menu-trigger', function(event){
 				event.preventDefault();
-				Navigation.open();
-			});
-			$('body').on('click', 'close-menu', function(event){
-				event.preventDefault();
-				Navigation.close();
+				if ( $(this).hasClass('trigger') ) {
+					$(this).removeClass('trigger').addClass('close');
+					Navigation.open();
+				} else {
+					$(this).removeClass('close').addClass('trigger');
+					Navigation.close();
+				}
 			});
 			$(document).keyup(function(event){
 				if(event.which == 27) {
+					$('.menu-trigger').removeClass('close').addClass('trigger');
 				  	Navigation.close();
 				}
 			});	

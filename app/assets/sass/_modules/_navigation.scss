@@ -2,15 +2,23 @@
 	.menu-trigger {
 		display: block;
 		@include size(5rem);
-		background: url('../images/asset-icon-menu.svg') no-repeat top left;
-		background-size: 2rem;
+		position: relative;
+		z-index: 99999;
+		&.trigger {
+			background: url('../images/asset-icon-menu.svg') no-repeat top left;
+			background-size: 2rem;
+		}
+		&.close {
+			background: url('../images/icon-cursor-white.png') no-repeat top left;
+			background-size: 2rem;
+		}
 	}
 	#navigation {
 		width: calc(100vw - 10rem);
 		height: calc(100vh - 10rem);
 		position: fixed; top: 5rem; left: 5rem;
 		background-color: rgba(0,0,0,0.5);
-		z-index: 99999;
+		z-index: 99998;
 		overflow: hidden;
 		ul {
 			padding-left: 0;
