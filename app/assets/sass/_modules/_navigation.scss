@@ -24,20 +24,22 @@
 			padding-left: 0;
 			margin: 0;
 			list-style: none;
-			height: 100%;
+			width: 100%;height: 100%;
+			overflow: auto;
 			li {
-				@include size(50%);
-				padding-bottom: 25%;
 				display: block;
+				height:calc(50vh - 5rem);
+				width: calc(50vw - 5rem);
 				float: left;
+				
 				background: #f0bf69;
 				&:nth-child(2), &:nth-child(3) {
 					background: #f1b348;
 				}
+				
 				a {
 					display: block;
 					@include size(100%);
-					padding-top: 50%;
 					margin: 0;
 					position: relative;
 

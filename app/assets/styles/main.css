@@ -965,6 +965,37 @@ small {
           position: absolute;
           bottom: 0;
           margin-left: 17.05961%; }
+  #content.contact {
+    height: 100vh;
+    width: 100vw;
+    background: url("../images/asset-background-contact@2x.jpg") no-repeat center center;
+    background-size: cover; }
+    #content.contact .fixed-content span {
+      font-size: 6.25rem;
+      font-family: "HelveticaBold", helvetica, sans-serif;
+      text-align: center;
+      color: #939393; }
+    #content.contact .yellow-row {
+      padding: 5rem 0;
+      width: calc(100% - 10rem);
+      background-color: #f1b348;
+      position: fixed;
+      bottom: 5rem; }
+      #content.contact .yellow-row .ten {
+        margin-left: 8.5298%; }
+      #content.contact .yellow-row p {
+        color: white;
+        font-size: 1.6rem;
+        margin-top: 0;
+        line-height: 1.5; }
+      #content.contact .yellow-row a {
+        display: block;
+        font-size: 1.7rem;
+        color: white;
+        text-decoration: none;
+        line-height: 1.5; }
+        #content.contact .yellow-row a:hover {
+          text-decoration: underline; }
 
 .menu .menu-trigger {
   display: block;
@@ -991,12 +1022,13 @@ small {
     padding-left: 0;
     margin: 0;
     list-style: none;
-    height: 100%; }
+    width: 100%;
+    height: 100%;
+    overflow: auto; }
     .menu #navigation ul li {
-      height: 50%;
-      width: 50%;
-      padding-bottom: 25%;
       display: block;
+      height: calc(50vh - 5rem);
+      width: calc(50vw - 5rem);
       float: left;
       background: #f0bf69; }
       .menu #navigation ul li:nth-child(2), .menu #navigation ul li:nth-child(3) {
@@ -1005,7 +1037,6 @@ small {
         display: block;
         height: 100%;
         width: 100%;
-        padding-top: 50%;
         margin: 0;
         position: relative; }
         .menu #navigation ul li a span {

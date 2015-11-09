@@ -284,4 +284,41 @@
 			}
 		}
 	}
+	&.contact {
+		@include size(100vw 100vh);
+		background: url('../images/asset-background-contact@2x.jpg') no-repeat center center;
+		background-size: cover;
+		.fixed-content span {
+			font-size: 6.25rem;
+			font-family: $title-font;
+			text-align: center;
+			color: $grey;
+		}
+		.yellow-row {
+			padding: 5rem 0;
+			width: calc(100% - 10rem);
+			background-color: $yellow;
+			position: fixed;
+			bottom: 5rem;
+			.ten {
+				@include shift(1);
+			}
+			p {
+				color: white;
+				font-size: 1.6rem;
+				margin-top: 0;
+				line-height: 1.5;
+			}
+			a {
+				display: block;
+				font-size: 1.7rem;
+				color: white;
+				text-decoration: none;
+				line-height: 1.5;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }
