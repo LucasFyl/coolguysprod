@@ -872,9 +872,10 @@ small {
   #content.about {
     height: 100%;
     width: 100vw;
-    background: url("../images/asset-about-landing@2x.jpg") no-repeat center center;
-    background-size: cover;
-    overflow: auto; }
+    background: url("../images/asset-about-landing@2x.jpg") no-repeat;
+    overflow: auto;
+    background-position: top left;
+    background-size: 100% 100vh; }
     #content.about .fixed-content {
       position: absolute; }
     #content.about .landing {
@@ -975,6 +976,8 @@ small {
       font-family: "HelveticaBold", helvetica, sans-serif;
       text-align: center;
       color: #939393; }
+    #content.contact .fixed-content .logo {
+      margin: 0 auto; }
     #content.contact .yellow-row {
       padding: 5rem 0;
       width: calc(100% - 10rem);
@@ -983,9 +986,11 @@ small {
       bottom: 5rem; }
       #content.contact .yellow-row .ten {
         margin-left: 8.5298%; }
+        #content.contact .yellow-row .ten .six:last-child {
+          padding-left: 10rem; }
       #content.contact .yellow-row p {
         color: white;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         margin-top: 0;
         line-height: 1.5; }
       #content.contact .yellow-row a {
