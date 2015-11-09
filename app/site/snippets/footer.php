@@ -1,9 +1,12 @@
+        <!--  import vendor scripts  -->
+        <?= js('assets/scripts/vendor/jquery.min.js') ?>
+        <!--  import main user scripts  -->
+        <?= js('assets/scripts/main.js') ?>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+
+        <!-- build:remove -->
+        <script src="http://localhost:35729/livereload.js"></script>
+        <!-- /build -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

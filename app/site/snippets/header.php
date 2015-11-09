@@ -14,16 +14,9 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <link rel="shortcut icon" href="/favicon.ico">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
-        <!-- endbower -->
-        <!-- endbuild -->
+        
         <!-- build:css(.tmp) styles/main.css -->
         <?php echo css('assets/styles/main.css') ?>
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
         
     </head>
