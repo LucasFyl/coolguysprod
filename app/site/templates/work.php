@@ -7,6 +7,8 @@
 		<h1 class="logo">Cool Guys Production</h1>
   		<h3>presents <span>you</span></h3>
 	</div>
+	
+	<div class="arrows"></div>
 
 	<ul class="main-content">
       	<?php $i = 1; ?>

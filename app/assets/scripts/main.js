@@ -15,6 +15,7 @@ function initPage(){
 
 	} else if ( $('#content.work').length ) {
 		initVideoPage();
+		initSlider();
 	}
 }
 function detectMobile(){
@@ -40,6 +41,20 @@ function hideLoader(){
 function resize() {
 	'use strict';
 	
+}
+function initSlider() {
+	'use strict';
+	
+	$('.main-content').slick({
+		infinite: true,
+		speed: 800,
+		autoplay: true,
+		fade: true,
+		dots: true,
+		appendArrows: $('#content .arrows'),
+		nextArrow: '<div class="slick-arrow next">next</div>',
+		prevArrow: '<div class="slick-arrow prev">previous</div>'
+	});
 }
 function initVideoPage(){
 	'use strict';

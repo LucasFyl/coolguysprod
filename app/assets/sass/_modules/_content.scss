@@ -111,6 +111,7 @@
 			position: fixed;
 			top: 10rem; left:50%;
 			@include transform(translateX(-50%));
+			z-index: 99997;
 
 			h3 {
 				width: 100%;
@@ -120,6 +121,32 @@
 				text-transform: uppercase;
 				span {
 					color: $yellow;
+				}
+			}
+		}
+		.arrows {
+			.slick-arrow {
+				display: block;
+				background-color: $yellow;
+				@include size(15rem 7.5rem);
+				cursor:pointer;
+				
+				text-align:center;
+				color:white;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 1.6rem;
+				line-height: 7.5rem;
+
+				position: fixed;
+				z-index: 9999;
+				bottom:2.5rem;
+
+				&.prev {
+					left: 2.5rem;
+				}
+				&.next {
+					right: 2.5rem;
 				}
 			}
 		}

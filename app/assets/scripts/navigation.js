@@ -28,9 +28,11 @@
 				event.preventDefault();
 				if ( $(this).hasClass('trigger') ) {
 					$(this).removeClass('trigger').addClass('close');
+					TweenMax.to('.arrows div', 0.25, {opacity:0,ease:Power2.easeOut});
 					Navigation.open();
 				} else {
 					$(this).removeClass('close').addClass('trigger');
+					TweenMax.to('.arrows div', 0.25, {opacity:1,ease:Power2.easeOut,delay:0.5});
 					Navigation.close();
 				}
 			});
