@@ -8,12 +8,9 @@ fields:
   title:
     label: Title
     type:  text
-  year:
-    label: Year
-    type:  text
   text:
     label: Text
     type:  textarea
-  tags:
-    label: Tags
-    type:  tags
+  reelUrl:
+    label: vimeo ID for the video
+    type:  text

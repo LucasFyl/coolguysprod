@@ -1,5 +1,9 @@
+/*jshint -W117 */
+/*jslint latedef:false*/
+/* jshint unused:false */
 (function(){
-	
+	'use strict';
+
 	var Modal = {
 		init: function(menutimeline){
 			TweenMax.set('.modal-fade-screen', {opacity:0,visibility:'hidden'});
@@ -28,12 +32,12 @@
 				Modal.close();
 			});
 			$(document).keyup(function(e){
-				if(e.which == 27) {
+				if(e.which === 27) {
 				  	Modal.close();
 				}
 			});	
 		}
-	}
+	};
 
 	Modal.init();
 

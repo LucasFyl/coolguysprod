@@ -2,12 +2,8 @@ Title: Nixon
 
 ----
 
-Year: 
-
-----
-
-Tags: 
-
-----
-
 Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+----
+
+Reelurl: 46701970

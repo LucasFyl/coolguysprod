@@ -11,5 +11,7 @@
     "scrollmagic": "~2.0.5",
     "retina.js": "retinajs#~1.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "slick-carousel": "~1.5.8"
+  }
 }

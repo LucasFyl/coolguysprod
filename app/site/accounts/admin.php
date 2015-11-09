@@ -7,6 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - home
-  - about
-  - contact
+  - work/ouiwill
+  - work/only-watch
+  - work/nixon
+  - work/night-rider
+  - work/hstoire-de-parfum

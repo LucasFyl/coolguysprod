@@ -2,12 +2,8 @@ Title: Histoire de Parfum
 
 ----
 
-Year: 
-
-----
-
-Tags: 
-
-----
-
 Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+----
+
+Reelurl: 46701971

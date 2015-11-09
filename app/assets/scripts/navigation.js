@@ -1,4 +1,8 @@
+/*jshint -W117 */
+/*jslint latedef:false*/
+/* jshint unused:false */
 (function(){
+	'use strict';
 	
 	var Navigation = {
 		init: function(){
@@ -12,7 +16,7 @@
 				 .set('#navigation li a', {y:20})
 				 .set('#navigation', {display:'block'})
 				 .staggerFromTo('#navigation li', 0.25, {y:-100,opacity:0}, {y:0,opacity:1,ease:Power3.easeOut}, 0.05)
-				 .staggerTo('#navigation li a', 0.5, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, "-=0.25");
+				 .staggerTo('#navigation li a', 0.5, {opacity:1,y:0,ease:Power2.easeOut}, 0.1, '-=0.25');
 			navTl.play();
 		},
 		close: function(){
@@ -31,13 +35,13 @@
 				}
 			});
 			$(document).keyup(function(event){
-				if(event.which == 27) {
+				if(event.which === 27) {
 					$('.menu-trigger').removeClass('close').addClass('trigger');
 				  	Navigation.close();
 				}
 			});	
 		}
-	}
+	};
 
 	Navigation.init();
 
