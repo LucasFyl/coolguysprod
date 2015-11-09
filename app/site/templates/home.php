@@ -1,16 +1,20 @@
-<?php snippet('header') ?>
+<?php snippet('head') ?>
 
-  <main class="main" role="main">
+  <div id="content" class="home">
+  	<?php snippet('header') ?>
+  	<div class="vertical-center">
+  		<div class="center">
+			<span class="we-are">we are</span>
+	  		<h1 class="logo">Cool Guys Production</h1>
 
-    <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
-    </div>
+	  		<a href="#" class="play-btn">
+	  			<span class="diamond"></span>
+	  		</a>
+	  	</div>
+  	</div>
+	  	
+  </div> <!-- / #content  -->
 
-    <hr>
-
-    <?php snippet('projects') ?>
-
-  </main>
+<?php snippet('modal') ?>
 
 <?php snippet('footer') ?>

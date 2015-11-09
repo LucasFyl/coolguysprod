@@ -1,7 +1,10 @@
         <!--  import vendor scripts  -->
         <?= js('assets/scripts/vendor/jquery.min.js') ?>
+        <?= js('assets/scripts/vendor/TweenMax.min.js') ?>
         <!--  import main user scripts  -->
         <?= js('assets/scripts/main.js') ?>
+        <?= js('assets/scripts/modal.js') ?>
+        <?= js('assets/scripts/navigation.js') ?>
 
 
         <!-- build:remove -->

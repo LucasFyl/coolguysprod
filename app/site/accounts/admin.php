@@ -7,7 +7,6 @@ password: >
 language: en
 role: admin
 history:
-  - about
   - home
+  - about
   - contact
-  - projects/velo

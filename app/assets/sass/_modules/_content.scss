@@ -1,0 +1,85 @@
+#content {
+	@include size(100vw 100vh);
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	border: 5rem solid white;
+	.top {
+		position: absolute;
+		top: 5rem;
+		&.left {
+			left: 5rem;
+		}
+		&.right {
+			right: 5rem;
+		}
+	}
+
+	&.home {
+		background: url('../images/asset-background-home@2x.jpg') no-repeat center center;
+		background-size: cover;
+		.vertical-center {
+			overflow: auto;
+			.center {
+				@include span-columns(8);
+				@include shift(2);
+			}
+		} 
+
+		.we-are {
+			font-family: $alt-font;
+			font-size: 16.8rem;
+			text-transform: uppercase;
+			color: rgba(255,255,255,0.1);
+			text-align: center;
+
+			@include span-columns(8);
+			margin: 0; float: none;
+			position: absolute;
+			top: 0;
+
+			-webkit-user-select: none; 
+			-moz-user-select: none;    
+			-ms-user-select: none;     
+			user-select: none;         
+		}
+		.logo {
+			margin: 0 auto;
+		}
+	}
+
+	h1.logo {
+		display: block;
+		@include size(24.4rem 19.5rem);
+		background: url('../images/logo.svg') no-repeat center center;
+		background-size: 24.4rem;
+    	background-position-y: 3rem;
+		text-indent: -9999px;
+	}
+
+	.play-btn {
+		display: block;
+		@include size(10.7rem);
+		border-radius: 100%;
+		position: relative;
+		border: 1.7rem solid rgba(241,179,72,0.1);
+		margin: 0 auto;
+
+		&:before {
+			content: " ";
+			@include size(100%);
+			display: block;
+			border-radius:100%;
+			background-color: $yellow;
+		}
+		.diamond {
+			@include size(1.6rem 2.5rem);
+			background: url('../images/asset-icon-play-btn.svg') no-repeat center center;
+			background-size: 1.6rem;
+
+			position: absolute;
+			top: 50%; margin-top: -1.25rem;
+			left: 50%; margin-left: -0.8rem;
+		}
+	}
+}

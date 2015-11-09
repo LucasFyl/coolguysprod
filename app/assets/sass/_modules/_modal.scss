@@ -1,0 +1,54 @@
+.modal {
+
+  .modal-fade-screen { // overlay
+    @include position(fixed, 0);
+    background-color: rgba(#000, 0.85);
+    opacity: 0;
+    text-align: left;
+    visibility: hidden;
+    z-index: 99999999999;
+    .modal-bg {
+      @include position(absolute, 0);
+      cursor: pointer;
+    }
+  }
+  .closeModal {
+    position: fixed;
+    top: 2.5rem;
+    left: 2.5rem;
+    background-color: $yellow;
+    @include size(5rem);
+    z-index: 9999;
+    color:white;
+    font-size: 2.4rem;
+    text-align: center;
+    cursor: pointer;
+    
+    .cross {
+      background: url(../images/icon-cursor-white.png) no-repeat center center;
+      background-size: cover;
+      @include size(5rem);
+      background-size: 2rem;
+      display: inline-block;
+      vertical-align:middle;
+      margin-right: 1rem;
+    }
+  }
+  .modal-inner {
+    @include size(100%);
+    background: white;
+    margin: auto;
+    overflow: auto;
+    padding: 5rem;
+    position: relative;
+
+    iframe {
+      display: block;
+      width: 100%; height: 100%;
+    }
+    .video-modal {
+      width: 100%; height: 100%;
+    }
+  }
+
+}

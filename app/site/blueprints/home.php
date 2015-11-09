@@ -9,4 +9,7 @@ fields:
   text:
     label: Text
     type:  textarea
-    size:  large
+    size:  small
+  reelUrl: 
+  	label: Reel vimeo url
+  	type: text
