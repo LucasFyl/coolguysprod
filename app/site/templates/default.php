@@ -1,10 +1,12 @@
 <?php snippet('head') ?>
 
-  <div id="content" class="work">
+  <div id="content" class="about">
   	<?php snippet('header') ?>
 
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
+	<div class="fixed-content">
+		<h1 class="logo">Cool Guys Production</h1>
+	</div>
+      
   </div> <!-- / #content  -->
 
 <?php snippet('modal') ?>

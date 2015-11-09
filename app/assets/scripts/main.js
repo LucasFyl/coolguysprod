@@ -16,6 +16,9 @@ function initPage(){
 	} else if ( $('#content.work').length ) {
 		initVideoPage();
 		initSlider();
+	} else if ( $('#content.about').length ) {
+		TweenMax.set('html', {overflow:'auto'});
+		$('body').addClass('about');
 	}
 }
 function detectMobile(){
