@@ -4,7 +4,7 @@
   	<?php snippet('header') ?>
   	<div class="vertical-center">
   		<div class="center">
-			<span class="we-are">we are</span>
+			<span class="title we-are">we are</span>
 	  		<h1 class="logo">Cool Guys Production</h1>
 
 	  		<a href="#" class="play-btn">

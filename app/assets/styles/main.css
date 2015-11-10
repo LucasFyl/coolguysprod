@@ -939,7 +939,7 @@ small {
               color: #f1b348; }
         #content.about .main > div:nth-child(2) h2 {
           text-align: left;
-          padding-top: 15rem;
+          padding-top: 20%;
           line-height: 5rem; }
         #content.about .main > div:nth-child(3) {
           margin-bottom: 42.8rem; }
