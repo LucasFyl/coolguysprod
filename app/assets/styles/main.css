@@ -25,7 +25,7 @@ html {
   overflow: hidden; }
   @media screen and (max-width: 1000px) {
     html {
-      font-size: 50%; } }
+      font-size: 40%; } }
 
 body {
   position: relative;
@@ -971,11 +971,12 @@ small {
     width: 100vw;
     background: url("../images/asset-background-contact@2x.jpg") no-repeat center center;
     background-size: cover; }
-    #content.contact .fixed-content span {
+    #content.contact .fixed-content h3 {
       font-size: 6.25rem;
       font-family: "HelveticaBold", helvetica, sans-serif;
       text-align: center;
-      color: #939393; }
+      color: #939393;
+      text-transform: none; }
     #content.contact .fixed-content .logo {
       margin: 0 auto; }
     #content.contact .yellow-row {

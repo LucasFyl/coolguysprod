@@ -287,11 +287,12 @@
 		background: url('../images/asset-background-contact@2x.jpg') no-repeat center center;
 		background-size: cover;
 		.fixed-content {
-			span {
+			h3 {
 				font-size: 6.25rem;
 				font-family: $title-font;
 				text-align: center;
 				color: $grey;
+				text-transform: none;
 			}
 			.logo {
 				margin: 0 auto;

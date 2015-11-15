@@ -5,7 +5,7 @@
 
 	<div class="fixed-content">
 		<h1 class="logo">Cool Guys Production</h1>
-		<span>get in touch.</span>
+		<h3>get in touch.</h3>
 	</div>
     <div class="yellow-row">
     	<div class="ten">
